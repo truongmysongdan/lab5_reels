@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reels clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="app_videos">
+        <div class ="video">
+            <!--header starts-->
+            <div class="videoHeader">
+                <span class="material-symbols-outlined"> arrow_back</span>  
+                <h3>Reels</h3>
+                <span class="material-symbols-outlined"> photo_camera</span>
+            </div>
+            <video src="video1.mp4" class="video_player"></video>
+            <!--footer starts-->
+            <div class="videoFooter">
+                <div class="videoFooter_text">
+                    <img class="user_avatar" src="Poggles_Base_Tier_1.jpg" alt="" />
+                    <h3>UIT - <button>Follow</button> </h3>
+                </div>
+
+                <div class="videoFooter_ticker">
+                    <span class="material-symbols-outlined"> music_note </span>
+                    <marquee>Song Name</marquee>
+                </div>
+
+                <div class="videoFooter_actions">
+                    <div class="videoFooter_actionsLeft">
+                        <span class="material-symbols-outlined"> favorite </span>
+                        <span class="material-symbols-outlined"> mode_comment </span>
+                        <span class="material-symbols-outlined"> share </span>
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+
+                <div class="videoFooter_actionRight">
+                    <div class="videoFooter_stat">
+                        <span class="material-symbols-outlined"> favorite </span>
+                        <p>12</p>
+                    </div>
+
+                    <div class="videoFooter_stat">
+                        <span class="material-symbols-outlined"> mode_comment </span>
+                        <p>34</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="videoHeader">
+            <span class="material-symbols-outlined"> arrow_back</span>  
+            <h3>Reels</h3>
+            <span class="material-symbols-outlined"> photo_camera</span>
+        </div>
+        <video src="video2.mp4" class="video_player"></video>
+        <!--footer starts-->
+        <div class="videoFooter">
+            <div class="videoFooter_text">
+                <img class="user_avatar" src="Poggles_Base_Tier_1.jpg" alt="" />
+                <h3>UIT - <button>Follow</button> </h3>
+            </div>
+
+            <div class="videoFooter_ticker">
+                <span class="material-symbols-outlined"> music_note </span>
+                <marquee>Song Name</marquee>
+            </div>
+
+            <div class="videoFooter_actions">
+                <div class="videoFooter_actionsLeft">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    <span class="material-symbols-outlined"> mode_comment </span>
+                    <span class="material-symbols-outlined"> share </span>
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div>
+
+            <div class="videoFooter_actionRight">
+                <div class="videoFooter_stat">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    <p>12</p>
+                </div>
+
+                <div class="videoFooter_stat">
+                    <span class="material-symbols-outlined"> mode_comment </span>
+                    <p>34</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+
+    <script> 
+        const videos = document.querySelectorAll('video');
+
+        for(const video of videos) {
+            video.addEventListener('click', function() {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
